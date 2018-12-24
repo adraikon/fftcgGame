@@ -10,7 +10,7 @@ namespace fftcg
         {
             base.OnSetType(viz);
 
-            viz.statsHolder.SetActive(false);
+            viz.powerHolder.SetActive(false);
         }
     }
 }

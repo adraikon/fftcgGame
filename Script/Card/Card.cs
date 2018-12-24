@@ -1,13 +1,19 @@
 ﻿/* 
- * Auteur : Damien "Raikon" Campolo   -   Version : 0.1   -   Date de dernière modification : 22/12/2018
+ * Auteur : Damien "Raikon" Campolo   -   Version : 0.2   -   Date de dernière modification : 23/12/2018
  * 
- * Description : 
+ *                            Class Card (asset)           -                 ScriptableObject : new Card
  * 
- * Projet : Make a fftcg game
+ * Description : Stock les données de l'une carte qui sont : - un cardType (Forward, Backup, Summon, Monster<non implémenté>) 
+ *                                                           - un tableau de CardProperties (numberID, Rarety, ...)
+ *         
  * 
- * Project : fftcgGame   -   Date de création du script : 10/11/2018
+ * ProjectName :    fftcgGame                -                Date de création du script : 10/11/2018
+ * ProjectDescription : Make a fftcg game with the inspiration of unity tcg game made by Sharp Accent.
  * 
- * Version Unity : 2018.2.16f1
+ * TutoFollowLink : https://sharpaccent.com/?c=course&id=29
+ * ScriptableObjetcLink (propriétaire : Sharp Accent): https://github.com/sharpaccent/ScriptableObject-Library
+ * 
+ * Version Unity : 2018.3.0f2
  */
 
 using System.Collections;

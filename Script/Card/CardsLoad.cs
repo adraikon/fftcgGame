@@ -1,16 +1,18 @@
 ﻿/* 
- * Auteur : Damien "Raikon" Campolo   -   Version : 0.1   -   Date de dernière modification : 22/12/2018
+ * Auteur : Damien "Raikon" Campolo   -   Version : 0.2   -   Date de dernière modification : 23/12/2018
  * 
- * Description : Script placé sur le game manager. Charge à partir de la base de donnée (fichier csv) 
- *              les informations des cartes des différents opus.
+ *                         Class CardsLoad           -                Monobehaviour : GameManager
+ *                         
+ * Description : Script placé sur le GameManager. Charge à partir de la base de donnée (fichier csv) 
+ *              les informations des cartes de l'opusI.
  * 
- * Projet : Make a fftcg game
+ * ProjectName :    fftcgGame                -                Date de création du script : 23/12/2018
+ * ProjectDescription : Make a fftcg game with the inspiration of unity tcg game made by Sharp Accent.
  * 
- * Project : fftcgGame   -   Date de création du script : 10/11/2018
+ * TutoFollowLink : https://sharpaccent.com/?c=course&id=29
+ * ScriptableObjetcLink (propriétaire : Sharp Accent): https://github.com/sharpaccent/ScriptableObject-Library
  * 
- * Version Unity : 2018.2.16f1
- * 
- * 
+ * Version Unity : 2018.3.0f2
  * 
  * Méthode pour charger les sprites à partir de la base de donnée.
        [Tooltip("The sprite of card")]

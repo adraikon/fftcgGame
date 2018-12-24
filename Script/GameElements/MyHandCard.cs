@@ -8,11 +8,12 @@ namespace fftcg.GameElements
     {
         public SO.GameEvent onCurrentCardSelected;
         public CardVariable currentCard;
-
+        public fftcg.GameStates.State holdingCard;
         
         public override void OnClick(CardIstance inst)
         {
             currentCard.Set(inst);
+            Settings.gameManager.SetState(holdingCard);
             onCurrentCardSelected.Raise();
             
         }

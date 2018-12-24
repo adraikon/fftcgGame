@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using SO;
 
-namespace SA
+namespace fftcg
 {
     public class AssignTransform : MonoBehaviour
     {
