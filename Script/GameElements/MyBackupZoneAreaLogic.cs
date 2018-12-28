@@ -3,22 +3,22 @@ using System.Collections;
 
 namespace fftcg
 {
-    [CreateAssetMenu(menuName ="Area/MyForwardWhenHolding")]
-    public class MyForwardZoneAreaLogic : AreaLogic
+    [CreateAssetMenu(menuName ="Area/MyBackupdWhenHolding")]
+    public class MyBackupZoneAreaLogic : AreaLogic
     {
         public CardVariable card;
-        public CardType forwardCard;
-        public TransformVariable areaGridForward;
+        public CardType backupCard;
+        public TransformVariable areaGridBackup;
 
         public override void Execute()
         {
             if (card.value == null)
                 return;
-            if (card.value.viz.card.cardType == forwardCard)
+            if (card.value.viz.card.cardType == backupCard)
             {
-                Debug.Log("place Forward card down");
+                Debug.Log("place Backup card down");
 
-                card.value.transform.SetParent(areaGridForward.value.transform);
+                card.value.transform.SetParent(areaGridBackup.value.transform);
                 card.value.transform.localPosition = Vector3.zero;
                 card.value.transform.localEulerAngles = Vector3.zero;
                 card.value.transform.localScale = Vector3.one;

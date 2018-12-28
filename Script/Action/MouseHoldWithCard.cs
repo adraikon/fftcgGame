@@ -20,27 +20,19 @@ namespace fftcg.GameStates
             {
                 List<RaycastResult> results = Settings.GetUIObjs();
 
-                bool isDroppedOnArea = false;
-
                 foreach (RaycastResult r in results)
                 {
                     GameElements.Area a = r.gameObject.GetComponentInParent<GameElements.Area>();
                     if(a != null)
                     {
-                        isDroppedOnArea = true;
                         a.onDrop();
                         break;
                     }
                 }
 
-                if (!isDroppedOnArea)
-                {
-                    currentCard.value.gameObject.SetActive(true);
-                }
-                else
-                {
-                    currentCard.value  =null;
-                }
+                
+                currentCard.value.gameObject.SetActive(true);
+                currentCard.value = null;
 
                 Settings.gameManager.SetState(playerControlState);
                 onPlayerControlState.Raise();
